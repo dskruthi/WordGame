@@ -1,0 +1,12 @@
+h1 {
+
+    font-family: 'Righteous', cursive;
+    margin: 20px;
+    font-size: 9rem;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(114,246,233,1) 38%, rgba(176,155,238,1) 51%, rgba(251,46,243,1) 71%);
+   -webkit-text-stroke: 13px transparent;
+   -webkit-background-clip: text;
+
+}
