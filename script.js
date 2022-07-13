@@ -5,7 +5,7 @@ let userCorrectAnswers = [];
 let correctAnswers;
 startGame().then(() => {
     // Listens for answer submissions
-    document.getElementById("submit").addEventListener('click', checkAnswer(document.getElementById("answer").value));
+    document.getElementById("submit").addEventListener('click', () => {checkAnswer(document.getElementById("answer").value.toLowerCase().trim())});
 })
 
 // Fetches q&a file and selects a random question for the current game session.
