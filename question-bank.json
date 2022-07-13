@@ -1,0 +1,66 @@
+[
+    {
+        "question": "The Top 5 Countries with the Most Illicit Financial Flow",
+        "answers": ["china", "russia", "mexico", "malaysia", "india"]
+    },
+    {
+        "question": "Top 5 Names Given to Baby Girls Born in 2021",
+        "answers": ["olivia", "emma", "charlotte", "amelia", "ava"]
+    }, 
+    {
+        "question": "Top 5 Names Given to Baby Boys Born in 2021",
+        "answers": ["liam", "noah", "oliver", "elijah", "james"]
+    },
+    {
+        "question": "Top 5 Richest Billionares in the World",
+        "answers": ["elon musk", "jeff bezos", "bernard arnault", "bill gates", "warren buffett"]
+    },
+    {
+        "question": "Top 5 Movies with Highest Gross Revenue",
+        "answers": ["avatar", "avengers: endgame", "titanic", "star wars: episode vii - the force awakens", "avengers: infinity war"]
+    },
+    {
+        "question": "Top 5 Most Popular Animals",
+        "answers": ["dog", "cat", "chicken", "horse", "fish"]
+    }, 
+    {
+        "question": "Top 5 Most Visited Cities in the World",
+        "answers": ["bangkok", "paris", "london", "dubai", "singapore"]
+    }, 
+    {
+        "question": "Top 5 Most Favorited Colors in America",
+        "answers": ["blue", "black", "gray", "pink", "white"]
+    }, 
+    {  
+        "question": "Top 5 Most Popular Hobbies & Activities All Over the World in 2022",
+        "answers": ["reading", "traveling", "fishing", "crafting", "watching tv"]
+    },
+    {
+        "question": "Top 5 Most Popular Sports All Over the World in 2022",
+        "answers": ["football", "cricket", "basketball", "hockey", "tennis"]
+    },
+    {
+        "question": "Top 5 Most Popular Ice Cream Flavors",
+        "answers": ["vanilla", "matcha", "chocolate", "coconut", "strawberry"]
+    }, 
+    {  
+        "question": "Top 5 Most Popular Fruits Eaten Around the World",
+        "answers": ["tomatoes", "apples", "bananas", "oranges", "mangoes"]
+    },
+    {
+        "question": "Top 5 Most Popular Sports All Over the World in 2022",
+        "answers": ["football", "cricket", "basketball", "hockey", "tennis"]
+    },
+    {
+        "question": "Top 10 Car Brands in the World 2022",
+        "answers": ["volkswagen", "toyota motors", "dalmier", "ford motor", "general motors"]
+    }, 
+    {  
+        "question": "Top 5 Healthiest Vegetables",
+        "answers": ["spinach", "kale", "broccoli", "beets", "cabbage"]
+    },
+    {
+        "question": "Top 5 Largest Footwear Companies in the World",
+        "answers": ["nike", "adidas", "kering", "vf corp", "skechers"]
+}
+]

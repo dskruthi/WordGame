@@ -11,7 +11,7 @@ startGame().then(() => {
 // Fetches q&a file and selects a random question for the current game session.
 async function startGame() {
     try {
-        let promise = await fetch('./q&a.json');
+        let promise = await fetch('./question-bank.json');
         let json = await promise.json();
         let question = json[Math.floor(json.length * Math.random())];
         document.getElementById("question").innerHTML = question["question"];
