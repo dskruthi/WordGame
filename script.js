@@ -11,8 +11,7 @@ async function startGame() {
         let json = await promise.json();
         let question = json[Math.floor(json.length * Math.random())];
         document.getElementById("question").innerHTML = question["question"];
-        // correctAnswers = question["answers"]
-        return question["answers"]
+        correctAnswers = question["answers"];
     } catch(error) {
         console.log(error);
     }
