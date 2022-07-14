@@ -1,7 +1,7 @@
 h1 {
 
     font-family: 'Righteous', cursive;
-    margin: 20px;
+    margin: 25px;
     font-size: 9rem;
     font-weight: bold;
     text-align: center;
@@ -9,4 +9,17 @@ h1 {
    -webkit-text-stroke: 13px transparent;
    -webkit-background-clip: text;
 
+}
+
+h2 {
+  
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Manrope', sans-serif;
+  outline-style: ridge;
+  outline-color: #d9ae86;
+  outline-width: 10px;
+  margin: 45px;
+  
+ 
 }
