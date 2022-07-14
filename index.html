@@ -3,14 +3,16 @@
     <head>
         <title>Word Game</title>
         <script src="script.js"></script>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <div class="holder">
         <form action="/word" method="POST"> 
-            <h4>Enter a word</h4>
-            <textarea name="user-input"></textarea>
+            <textarea name="user-input" placeholder="Enter a word"></textarea>
             <br/>
-            <input type="submit"/>
+            <button id="submit-button" type="button">Submit</button>
         </form>
+    </div>
 
     </body>
 </html>
