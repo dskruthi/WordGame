@@ -5,17 +5,25 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Righteous&display=swap" rel="stylesheet">
-        <script src="script.js"></script>
+        <script defer src="script.js"></script>
         <title>Word Game</title>
-        <h1>Word Game</h1>
-        <h2>sample prompt goes here</h2>
     </head>
     <body>
-        <form action="/word" method="post">
-            <textarea name="user-input" placeholder="Enter a word"></textarea>
-            <br/>
-            <button id="submit-button" type="submit">Submit</button>
+        <h1>Word Game</h1>
+        <h2 id="prompt">sample prompt goes here</h2>
+        <div class = "parent"> <div class = "child">Word 1</div> </div>
+      <div class = "parent"> <div class = "child">Word 2</div> </div> 
+      <div class = "parent"> <div class = "child">Word 3</div> </div>
+       <div class = "parent"> <div class = "child">Word 4</div> </div>
+       <div class = "parent"> <div class = "child">Word 5</div> </div>
+        <script src="script.js"></script>
+         <div class="holder"></div>
+      <br></br><br></br><br></br> <form action="/word" method="POST"> 
+   
+            <textarea name="user-input" placeholder="     Enter A Word"></textarea>
+            <br><br/>
+            <button id="submit-button" type="button">Submit</button>
         </form>
-
+        </div>
     </body>
 </html>
