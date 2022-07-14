@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Word Game</title>
         <script src="script.js"></script>
     </head>
     <body>
-        <form action="/word" method="POST"> 
-            <h4>Enter a word</h4>
-            <textarea name="user-input"></textarea>
+        <form action="/word" method="post">
+            <textarea name="user-input" placeholder="Enter a word"></textarea>
             <br/>
-            <input type="submit"/>
+            <button id="submit-button" type="button">Submit</button>
         </form>
 
     </body>
