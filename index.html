@@ -10,19 +10,20 @@
     <body>
         <h1>Word Game</h1>
         <h2 id="prompt">sample prompt goes here</h2>
+
         <div class = "parent"> <div class = "child">Word 1</div> </div>
-      <div class = "parent"> <div class = "child">Word 2</div> </div> 
-      <div class = "parent"> <div class = "child">Word 3</div> </div>
-       <div class = "parent"> <div class = "child">Word 4</div> </div>
-       <div class = "parent"> <div class = "child">Word 5</div> </div>
-        <script src="script.js"></script>
-         <div class="holder"></div>
-      <br></br><br></br><br></br> <form action="/word" method="POST"> 
-   
-            <textarea name="user-input" placeholder="     Enter A Word"></textarea>
+        <div class = "parent"> <div class = "child">Word 2</div> </div> 
+        <div class = "parent"> <div class = "child">Word 3</div> </div>
+        <div class = "parent"> <div class = "child">Word 4</div> </div>
+        <div class = "parent"> <div class = "child">Word 5</div> </div>
+
+        <div class="holder"></div>
+        <br></br><br></br><br></br> 
+        
+        <form action="/word" method="POST"> 
+            <textarea name="user-input" id="user-input" placeholder="     Enter A Word"></textarea>
             <br><br/>
             <button id="submit-button" type="button">Submit</button>
         </form>
-        </div>
     </body>
 </html>

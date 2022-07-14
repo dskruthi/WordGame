@@ -5,8 +5,8 @@ let userCorrectAnswers = [];
 let correctAnswers;
 startGame().then(() => {
     // Listens for answer submissions
-    document.getElementById("submit").addEventListener('click', () => {checkAnswer(document.getElementById("answer").value.toLowerCase().trim())});
-})
+    document.getElementById("submit-button").addEventListener('click', () => {checkAnswer(document.getElementById("user-input").value.toLowerCase().trim())});
+});
 
 // Fetches q&a file and selects a random question for the current game session.
 async function startGame() {
@@ -14,7 +14,7 @@ async function startGame() {
         let promise = await fetch('./question-bank.json');
         let json = await promise.json();
         let question = json[Math.floor(json.length * Math.random())];
-        document.getElementById("question").innerHTML = question["question"];
+        document.getElementById("prompt").innerHTML = question["question"];
         correctAnswers = question["answers"];
     } catch(error) {
         console.log(error);
@@ -24,7 +24,7 @@ async function startGame() {
 // Checks if submitted answer is correct.
 async function checkAnswer(answer) {
     triesLeft--;
-    document.getElementById("answer").value = ""
+    document.getElementById("user-input").value = "";
 
     // Answer is correct
     if(!userCorrectAnswers.includes(answer) && correctAnswers.includes(answer)) {
