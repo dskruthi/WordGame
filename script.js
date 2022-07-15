@@ -34,6 +34,13 @@ async function checkAnswer(answer) {
         document.getElementById("validity").classList.remove("incorrect");
         document.getElementById("validity").classList.add("correct");
 
+        // Displays correct answer in answer box
+        let index = correctAnswers.indexOf(answer);
+        console.log(answer)
+        console.log(index)
+        document.getElementById("answer-" + index).innerHTML = answer;
+
+
         // Player won game
         if (numCorrect === 5) {
             document.getElementById("gameStatus").classList.add("won");
