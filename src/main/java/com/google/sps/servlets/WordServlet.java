@@ -1,7 +1,5 @@
 package com.google.sps.servlets;
 
-import javax.servlet;
-
 import java.io.IOException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -24,7 +22,7 @@ public class WordServlet extends HttpServlet {
     // Get word entered by the user
     String userInput = request.getParameter("user-input");
     // Get session id 
-    long sessionId = request.getSession().getId();
+    String sessionId = request.getSession().getId();
 
     System.out.println("You submitted: " + userInput);
 
