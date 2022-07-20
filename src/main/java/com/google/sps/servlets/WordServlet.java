@@ -6,6 +6,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.cloud.datastore.Datastore;
+import com.google.cloud.datastore.DatastoreOptions;
+import com.google.cloud.datastore.Entity;
+import com.google.cloud.datastore.FullEntity;
+import com.google.cloud.datastore.KeyFactory;
+
 
 @WebServlet("/word")
 public class WordServlet extends HttpServlet {
@@ -15,8 +21,20 @@ public class WordServlet extends HttpServlet {
 
     // Get word entered by the user
     String userInput = request.getParameter("user-input");
+    // Get session id 
+    String sessionId = request.getSession().getId();
 
     System.out.println("You submitted: " + userInput);
-    response.getWriter().println("<h1>You submitted: " + userInput +"</h1>");
+
+    Datastore datastore = DatastoreOptions.getDefaultInstance().getService();
+
+    KeyFactory keyFactory = datastore.newKeyFactory().setKind("Task");
+
+    FullEntity taskEntity =
+        Entity.newBuilder(keyFactory.newKey())
+            .set("word", userInput)
+            .set("sessionId", sessionId)
+            .build();
+    datastore.put(taskEntity);
   }
 }
